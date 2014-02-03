@@ -11,5 +11,10 @@ This is a repository showing how you use a Raspberry Pi and a Webcam to capture 
 For you own sake use the HDMI output, and thing don't get to crammed on the screen.
 4. Power up, and select "Raspbian", and install (i), and answer "yes" to the questions.
 This takes quite a bit of time ( 0.5 - 0.9 Mb/sec)
+When the install is ready, the card reboots.
+5. In setup: Expand filesystem
+6. In setup: Enable camera if you use a Raspberry camera
+7. Reboot
+
 
 
