@@ -23,41 +23,36 @@ When the install is ready, the card reboots.
 13. "wget https://raw2.github.com/sunejak/Webcam/master/capture.sh" to get the capture file
 14. "wget https://raw2.github.com/sunejak/Webcam/master/crontab.file" to get the crontab entry for capture every minute
 15. "chmod +rx capture.sh" to set the execute mode on the capture file.
-
 16. Generate keypair
     "ssh-keygen -t rsa"
 
-Generating public/private rsa key pair.
+    Generating public/private rsa key pair.
 
-Enter file in which to save the key (/home/pi/.ssh/id_rsa): 
+    Enter file in which to save the key (/home/pi/.ssh/id_rsa): 
 
-Enter passphrase (empty for no passphrase): 
+    Enter passphrase (empty for no passphrase): 
 
-Enter same passphrase again: 
+    Enter same passphrase again: 
 
-Your identification has been saved in /home/pi/.ssh/id_rsa.
+    Your identification has been saved in /home/pi/.ssh/id_rsa.
 
-Your public key has been saved in /home/pi/.ssh/id_rsa.pub.
+    Your public key has been saved in /home/pi/.ssh/id_rsa.pub.
 
-The key fingerprint is:
+    The key fingerprint is:
 
-f1:7d:46:a5:96:66:90:7c:7f:9c:a1:48:a4:a3:14:cf pi@raspberry
+    f1:7d:46:a5:96:66:90:7c:7f:9c:a1:48:a4:a3:14:cf pi@raspberry
 
-The key's randomart image is:
+    The key's randomart image is:
 
-+--[ RSA 2048]----+
-|          .o...oo|
-|       .  ..+ o.o|
-|        = ..   o |
-|       . E o o  .|
-|      . S o . o  |
-|       .     o   |
-|                 |
-|                 |
-|                 |
-+-----------------+
+    +--[ RSA 2048]----+
+    |          .o...oo|
+    |       .  ..+ o.o|
+    |       . E o o  .|
+    |      . S o . o  |
+    |       .     o   |
+    +-----------------+
 
-cat .ssh/id_rsa.pub | ssh ttjsun@sune-ws.no-ip.org 'cat >> .ssh/authorized_keys'
+17. "cat .ssh/id_rsa.pub | ssh user@your.server.org 'cat >> .ssh/authorized_keys'" to put key on your server
 
 
 
