@@ -4,9 +4,9 @@
 if [ ! -d /home/pi/tmp ]
 then
 mkdir /home/pi/tmp
+sudo mount -t tmpfs /dev/ram15 /home/pi/tmp
 sudo chgrp /home/pi/tmp/ pi
 sudo chown /home/pi/tmp/ pi
-sudo mount -t tmpfs /dev/ram15 /home/pi/tmp
 fi
  
 if [ -d /home/pi/tmp ] 
