@@ -22,20 +22,27 @@ When the install is ready, the card reboots.
 11. Or use "raspistill -v -o test.jpg" to capture a image from the internal cam.
 12. "sudo passwd root" to get access rights.
 13. "sudo apt-get install streamer" to get recording/capture SW for USB Web Cam
-14. "wget https://raw2.github.com/sunejak/Webcam/master/webcam_capture.sh" to get the capture file
-15. "wget https://raw2.github.com/sunejak/Webcam/master/internal_capture.sh" to get the capture file
+14. "wget https://raw2.github.com/sunejak/Webcam/master/webcam_capture.sh" to get the USB camera capture file
+15. "wget https://raw2.github.com/sunejak/Webcam/master/internal_capture.sh" to get the internal camera capture file
 16. "wget https://raw2.github.com/sunejak/Webcam/master/crontab.file" to get the crontab entry for capture every minute
 17. "chmod +rx capture.sh" to set the execute mode on the capture file.
 18. Generate keypair
-    "ssh-keygen -t rsa"
+"ssh-keygen -t rsa"
 
     Generating public/private rsa key pair.
+
     Enter file in which to save the key (/home/pi/.ssh/id_rsa): 
+
     Enter passphrase (empty for no passphrase): 
+
     Enter same passphrase again: 
+
     Your identification has been saved in /home/pi/.ssh/id_rsa.
+
     Your public key has been saved in /home/pi/.ssh/id_rsa.pub.
+
     The key fingerprint is:
+
     f1:7d:46:a5:96:66:90:7c:7f:9c:a1:48:a4:a3:14:cf pi@raspberry
 
     The key's randomart image is:
@@ -54,8 +61,8 @@ When the install is ready, the card reboots.
 :
     +-----------------+
 
-19. "cat .ssh/id_rsa.pub | ssh user@your.server.org 'cat >> .ssh/authorized_keys'" to put RSA key on your server
+19. Add the certificate to your server "cat .ssh/id_rsa.pub | ssh user@your.server.org 'cat >> .ssh/authorized_keys'" to put RSA key on your server
 
-20. Tveek with camrea parameters.
-21. "crontab crontab.file" to take pictures every minute, edit to suit your need.
+20. Tweek with camrea parameters.
+21. Add "crontab crontab.file" to take pictures every minute, edit to suit your needs.
 
