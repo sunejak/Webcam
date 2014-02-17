@@ -63,6 +63,7 @@ When the install is ready, the card reboots.
 
 19. Add the certificate to your server "cat .ssh/id_rsa.pub | ssh user@your.server.org 'cat >> .ssh/authorized_keys'" to put RSA key on your server
 
-20. Tweek with camrea parameters.
-21. Add "crontab crontab.file" to take pictures every minute, edit to suit your needs.
+20. Tweek with camera and script parameters, edit to suit your needs.
+21. Add "crontab crontab.file" to take pictures every minute.
+22. Enjoy :)
 
