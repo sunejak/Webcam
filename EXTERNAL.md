@@ -24,11 +24,12 @@ When the install is ready, the card reboots.
 16. "wget https://raw2.github.com/sunejak/Webcam/master/crontab.file" to get the crontab entry for capture every minute
 17. "chmod +rx capture.sh" to set the execute mode on the capture file.
 18. Generate keypair
-	"ssh-keygen -t rsa"
-	Generating public/private rsa key pair.
-        Enter file in which to save the key (/home/pi/.ssh/id_rsa): 
 
-    Enter passphrase (empty for no passphrase): 
+       "ssh-keygen -t rsa"
+       Generating public/private rsa key pair.
+       Enter file in which to save the key (/home/pi/.ssh/id_rsa): 
+
+Enter passphrase (empty for no passphrase): 
 
     Enter same passphrase again: 
 
