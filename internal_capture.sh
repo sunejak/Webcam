@@ -17,7 +17,10 @@ fi
 # 
 if [ -d /home/pi/tmp ] 
 then
-raspistill -v -o /home/pi/tmp/test.jpeg
+# for debug details
+# raspistill -v -o /home/pi/tmp/test.jpeg
+# for silent mode
+raspistill -n -o /home/pi/tmp/test.jpeg
 #
 # copy the file to your server
 #
