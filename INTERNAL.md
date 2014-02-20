@@ -8,7 +8,7 @@ This is a repository showing how you use a Raspberry Pi to capture images and st
 1. Download the [quick start guide](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf)
 2. Download [NOOBS v1.3.2](http://www.raspberrypi.org/downloads) and unzip it onto the empty FAT formatted SD card.
 3. Install SD card, connect keyboard, mouse, monitor and network cable,and [Raspberry Cam](http://www.farnell.com/datasheets/1730389.pdf)
-For you own sake use the HDMI output, and things don't get to crammed on the screen.
+For you own sake use the HDMI output, and things don't get to crammed on the monitor screen.
 4. Power up, and select "Raspbian", and install (i), and answer "yes" to the questions.
 This takes quite a bit of time ( 0.5 - 0.9 Mb/sec)
 When the install is ready, the card reboots.
@@ -23,8 +23,7 @@ When the install is ready, the card reboots.
 13. Run the internal_capture.sh file, and look at the result in the webrowser ( startx to get GUI running )
 14. "wget https://raw2.github.com/sunejak/Webcam/master/crontab.file" to get the crontab entry for capture every minute
 15. "chmod +rx capture.sh" to set the execute mode on the capture file.
-16. Generate keypair
-"ssh-keygen -t rsa"
+16. Generate keypair with command "ssh-keygen -t rsa"
 
     Generating public/private rsa key pair.
 
