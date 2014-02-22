@@ -6,7 +6,7 @@ USB Webcam
 1. Download the [quick start guide](http://www.raspberrypi.org/wp-content/uploads/2012/04/quick-start-guide-v2_1.pdf)
 2. Download [NOOBS v1.3.2](http://www.raspberrypi.org/downloads) and unzip it onto the empty FAT formatted SD card.
 3. Install SD card, connect keyboard, mouse, monitor and network cable,and USB webcam.
-For you own sake use the HDMI output, and things don't get to crammed on the screen.
+For you own sake use the HDMI output, and things don't get to crammed on the monitor screen.
 4. Power up, and select "Raspbian", and install (i), and answer "yes" to the questions.
 This takes quite a bit of time ( 0.5 - 0.9 Mb/sec)
 When the install is ready, the card reboots.
