@@ -17,7 +17,7 @@ When the install is ready, the card reboots.
 7. Reboot your Raspberry card
 8. Look at the boot screen to see your IP address
 9. Login at pi@xx.xx.xx.xx using password raspberry
-10. "sudo passwd root" to get access rights.
+10. "su passwd root" to get access rights.
 11. "sudo apt-get install streamer" to get recording/capture SW for USB Web Cam
 12. "wget https://raw2.github.com/sunejak/Webcam/master/internal_capture.sh" to get the internal camera capture file
 13. Run the internal_capture.sh file, and look at the result in the webrowser ( startx to get GUI running )

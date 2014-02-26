@@ -17,7 +17,7 @@ When the install is ready, the card reboots.
 9. Login at pi@xx.xx.xx.xx using password raspberry
 10. Connect your USB camera, and use "lsusb" to see that it is connected, and "lsusb -v" for details.
 11. Or use "raspistill -v -o test.jpg" to capture a image from the internal cam.
-12. "sudo passwd root" to get access rights.
+12. "su passwd root" to get access rights.
 13. "sudo apt-get install streamer" to get recording/capture SW for USB Web Cam
 14. "wget https://raw2.github.com/sunejak/Webcam/master/webcam_capture.sh" to get the USB camera capture file
 15. Run the webcam_capture.sh file, and look at the result in the webrowser ( startx to get GUI running )
