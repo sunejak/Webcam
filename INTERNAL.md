@@ -18,12 +18,11 @@ When the install is ready, the card reboots.
 8. Look at the boot screen to see your IP address
 9. Login at pi@xx.xx.xx.xx using password raspberry
 10. "su passwd root" to get access rights.
-11. "sudo apt-get install streamer" to get recording/capture SW for USB Web Cam
-12. "wget https://raw2.github.com/sunejak/Webcam/master/internal_capture.sh" to get the internal camera capture file
-13. Run the internal_capture.sh file, and look at the result in the webrowser ( startx to get GUI running )
-14. "wget https://raw2.github.com/sunejak/Webcam/master/crontab.file" to get the crontab entry for capture every minute
-15. "chmod +rx capture.sh" to set the execute mode on the capture file.
-16. Generate keypair with command "ssh-keygen -t rsa"
+11. "wget https://raw2.github.com/sunejak/Webcam/master/internal_capture.sh" to get the internal camera capture file
+12. Run the internal_capture.sh file, and look at the result in the webrowser ( startx to get GUI running )
+13. "wget https://raw2.github.com/sunejak/Webcam/master/internal_crontab.file" to get the crontab entry for capture every minute
+14. "chmod +rx capture.sh" to set the execute mode on the capture file.
+15. Generate keypair with command "ssh-keygen -t rsa"
 
     Generating public/private rsa key pair.
 
@@ -57,8 +56,8 @@ When the install is ready, the card reboots.
 :
     +-----------------+
 
-17. Add the certificate to your server "cat .ssh/id_rsa.pub | ssh user@your.server.org 'cat >> .ssh/authorized_keys'" to put RSA key on your server
-18. Tweek with camera and script parameters, edit to suit your needs.
-19. Add "crontab crontab.file" to take pictures every minute.
-20. Enjoy :)
+16. Add the certificate to your server "cat .ssh/id_rsa.pub | ssh user@your.server.org 'cat >> .ssh/authorized_keys'" to put RSA key on your server
+17. Tweek with camera and script parameters, edit to suit your needs.
+18. Add "crontab crontab.file" to take pictures every minute.
+19. Enjoy :)
 
