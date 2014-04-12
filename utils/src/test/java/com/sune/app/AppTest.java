@@ -52,13 +52,16 @@ public class AppTest
 
         Properties prop = System.getProperties();
 
-        for (int x= 0; x < env.size(); x++) {
+            Set setPro= prop.stringPropertyNames();
+            i = setPro.iterator();
 
-
+        while(i.hasNext()){
+            Object m = i.next();
+            System.out.println(m.toString() + "=" + prop.getProperty(m.toString()));
         }
 
-
         new XorImages("./foobar06.jpeg", "./foobar07.jpeg", "diff.jpeg", null);
-        assertTrue( true );
+        new ScaleImage("diff.jpeg", "300", "300");
+
     }
 }
