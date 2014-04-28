@@ -14,7 +14,7 @@ import java.io.IOException;
 public class XorImages
 
 {
-    static boolean debug = true;
+    static boolean debug = false;
 
     XorImages(String in1, String in2, String diff, String ignore) throws IOException {
 
@@ -22,9 +22,7 @@ public class XorImages
         BufferedImage image2;
 
         int delta;
-
         if(ignore == null)delta = 10; else delta = Integer.parseInt(ignore);
-
 
         File imageFile1 = new File(in1);
         image1 = ImageIO.read(imageFile1);
