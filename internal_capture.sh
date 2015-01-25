@@ -1,3 +1,4 @@
+#!/bin/bash
 #
 # capture from internal cam
 #
