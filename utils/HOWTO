@@ -1,0 +1,14 @@
+#
+# Images can first be scaled down to a desired size
+#
+~/scripts/scale_down.sh "cam0*.jpeg" 1000 1000
+#
+# then you can do the diff
+#
+~/scripts/loop_over.sh "filepattern" 50
+#
+# and finally the HTML file to easily look at them in bulk
+#
+~/scripts/generate_html.sh > all_sc_diffs.html
+#
+#
