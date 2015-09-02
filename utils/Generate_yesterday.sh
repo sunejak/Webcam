@@ -3,7 +3,7 @@
 # Generate all files for yesterday
 #
 
-cd /var/www/garage/`date --date='yesterday' +%m`_`date --date='yesterday' +%b`_`date --date='yesterday' +%Y`/`date --date='yesterday' +%d`
+cd /var/www/html/garage/`date --date='yesterday' +%m`_`date --date='yesterday' +%b`_`date --date='yesterday' +%Y`/`date --date='yesterday' +%d`
 
 # Scale down
 ~/scripts/Scale_down.sh "cam0_2015_*.jpeg" 600 800
@@ -15,3 +15,4 @@ cd /var/www/garage/`date --date='yesterday' +%m`_`date --date='yesterday' +%b`_`
 ~/scripts/Generate_biggest_diff_html.sh > big.html
 
 ~/scripts/Generate_html.sh > diffs.html
+

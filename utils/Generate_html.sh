@@ -12,7 +12,7 @@ echo    \<body bgcolor=\"#FFFFFF\"\>
 echo      \<h1 align=\"center\"\>Diff images\</h1\>
 
 
-# echo Length: $array4Len
+# echo Lenght: $array4Len
 
 for ((i=0; i<$array4Len; i++))  
 do 
