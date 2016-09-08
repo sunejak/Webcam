@@ -4,7 +4,7 @@
 #
 delay=$1
 if [[ ${delay} == "" ]] ; then
-    echo "Usage:  internal_caapture.sh delaytime"
+    echo "Usage:  internal_capture.sh delaytime"
     exit 1
 fi
 #

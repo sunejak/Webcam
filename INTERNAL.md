@@ -16,10 +16,10 @@ When the install is ready, the card reboots.
 6. In setup: Enable camera if you use a Raspberry Cam.
 7. Reboot your Raspberry card
 8. Look at the boot screen to see your IP address
-9. Login at pi@xx.xx.xx.xx using password raspberry
+9. Login at pi@xx.xx.xx.xx using password "raspberry"
 10. "su passwd root" to get access rights.
 11. "wget https://github.com/sunejak/Webcam/raw/master/internal_capture.sh" to get the internal camera capture file
-12. Run the internal_capture.sh file, and look at the result in the webrowser ( startx to get GUI running )
+12. Run the ./internal_capture.sh delay , and look at the result in the webrowser ( startx to get GUI running )
 13. "wget https://github.com/sunejak/Webcam/raw/master/internal_crontab.file" to get the crontab entry for capture every minute
 14. "chmod +rx internal_capture.sh" to set the execute mode on the capture file.
 15. Generate keypair with command "ssh-keygen -t rsa"
