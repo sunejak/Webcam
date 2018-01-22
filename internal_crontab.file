@@ -1,1 +1,1 @@
-* * * * * cd /home/pi ; ./internal_capture.sh >> logfile.out
+* * * * * cd /home/pi ; ./internal_capture.sh 00 >> logfile.out
