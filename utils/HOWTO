@@ -1,14 +1,16 @@
 #
 # Images can first be scaled down to a desired size
 #
-~/scripts/scale_down.sh "cam0*.jpeg" 1000 1000
+# java -Djava.awt.headless=true -cp target/utils-1.0-SNAPSHOT.jar com.sune.app.XorImages /home/ttjsun/Downloads/2022/cam0_2022_Jan_20_1110_0.jpeg /home/ttjsun/Downloads/2022/cam0_2022_Jan_20_1110_30.jpeg diff_70.jpeg 70
+#
+~/scripts/Scale_down.sh "cam0*.jpeg" 1000 1000
 #
 # then you can do the diff
 #
-~/scripts/loop_over.sh "filepattern" 50
+~/scripts/Loop_over.sh "filepattern" 50
 #
 # and finally the HTML file to easily look at them in bulk
 #
-~/scripts/generate_html.sh > all_sc_diffs.html
+~/scripts/Generate_html.sh > all_sc_diffs.html
 #
 #
