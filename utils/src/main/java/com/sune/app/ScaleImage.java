@@ -28,7 +28,7 @@ public class ScaleImage {
         Graphics2D g = resizeImage.createGraphics();
         g.drawImage(image1, 0, 0, width, height, null);
         g.dispose();
-        ImageIO.write(resizeImage, "jpg",new File("sc_" + in1 ));
+        ImageIO.write(resizeImage, "jpg",new File(in1 + "_sc"  ));
     }
 
     public static void main( String[] args )
@@ -38,7 +38,7 @@ public class ScaleImage {
             System.exit(1);
         }
         try {
-            new ScaleImage (args[0], args[1], args[2]);
+            new ScaleImage(args[0], args[1], args[2]);
             System.exit(0);
         } catch (IOException e) {
             if(debug)e.printStackTrace();

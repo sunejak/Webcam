@@ -39,10 +39,9 @@ public class AppTest
      */
     public void testApp() throws IOException
     {
-        Map env = System.getenv();
-
-        Set setEnv = env.entrySet();
-
+        /*
+        Map<String, String> env = System.getenv();
+        Set<Map.Entry<String, String>> setEnv = env.entrySet();
         Iterator i = setEnv.iterator();
 
         while(i.hasNext()){
@@ -51,8 +50,7 @@ public class AppTest
         }
 
         Properties prop = System.getProperties();
-
-            Set setPro= prop.stringPropertyNames();
+            Set<String> setPro= prop.stringPropertyNames();
             i = setPro.iterator();
 
         while(i.hasNext()){
@@ -60,8 +58,17 @@ public class AppTest
             System.out.println(m.toString() + "=" + prop.getProperty(m.toString()));
         }
 
-        new XorImages("./foobar06.jpeg", "./foobar07.jpeg", "diff.jpeg", null);
-        new ScaleImage("diff.jpeg", "300", "300");
+         */
 
+        XorImages n = new XorImages("/home/ttjsun/2022/Webcam/utils/cam0_2022_Mar_20_0744_0.jpeg",
+                "/home/ttjsun/2022/Webcam/utils/cam0_2022_Mar_20_0844_0.jpeg",
+                "/home/ttjsun/2022/Webcam/utils/diff.jpeg", null);
+        System.out.println("Created diff");
+
+        ScaleImage m = new ScaleImage("/home/ttjsun/2022/Webcam/utils/diff.jpeg", "300", "300");
+        System.out.println("Scaled diff");
+
+        SubImage o = new SubImage("/home/ttjsun/2022/Webcam/utils/cam0_2022_Mar_20_0744_0.jpeg", "400", "750", "1700", "750");
+        System.out.println("Sub image");
     }
 }
