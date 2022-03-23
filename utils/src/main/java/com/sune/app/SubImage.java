@@ -34,7 +34,15 @@ public class SubImage {
         Graphics g = copyOfImage.createGraphics();
         g.drawImage(img, 0, 0, null);
         g.dispose();
-        ImageIO.write(copyOfImage, "jpg",new File(in1 + "_sub"  ));
+        int lastSlash = in1.lastIndexOf("/");
+        String newName;
+        if(lastSlash > 0) {
+            String path = in1.substring(0, lastSlash);
+            newName =  path + in1.substring(lastSlash).replace("/", "/sub_");
+        } else {
+            newName =  "sub_" + in1;
+        }
+        ImageIO.write(copyOfImage, "jpg",new File(newName  ));
     }
 
     public static void main( String[] args )

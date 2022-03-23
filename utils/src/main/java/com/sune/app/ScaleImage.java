@@ -28,7 +28,16 @@ public class ScaleImage {
         Graphics2D g = resizeImage.createGraphics();
         g.drawImage(image1, 0, 0, width, height, null);
         g.dispose();
-        ImageIO.write(resizeImage, "jpg",new File(in1 + "_sc"  ));
+        int lastSlash = in1.lastIndexOf("/");
+        String newName;
+        if(lastSlash > 0) {
+            String path = in1.substring(0, lastSlash);
+            newName =  path + in1.substring(lastSlash).replace("/", "/sc_");
+        } else {
+            newName =  "sc_" + in1;
+        }
+
+        ImageIO.write(resizeImage, "jpg",new File(newName ));
     }
 
     public static void main( String[] args )
