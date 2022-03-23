@@ -2,12 +2,12 @@
 
 factor=$2
 if [[ ${factor} == "" ]] ; then
-    echo "Usage: loop_over.sh filepattern factor"
+    echo "Usage: Loop_over.sh filePattern factor"
     exit 1
 fi
 filepattern=$1
 if [[ ${filepattern} == "" ]] ; then
-    echo "Usage: loop_over.sh filepattern factor"
+    echo "Usage: Loop_over.sh filePattern factor"
     exit 1
 fi
 
@@ -20,7 +20,7 @@ echo Lenght: ${array4Len}
 for ((i=0; i<$array4Len; i++))  
 do 
 	echo ${i}  ${array4[$i]}  ${array4[$i+1]}
-	java  -Djava.awt.headless=true  -cp ~/2022/Webcam/utils/target/utils-1.0-SNAPSHOT.jar com.sune.app.XorImages ${array4[$i]}  ${array4[$i+1]} diff_${array4[$i]} ${factor}
+	java  -Djava.awt.headless=true  -cp ~/2022/Webcam/utils/target/utils-1.1-SNAPSHOT.jar com.sune.app.XorImages ${array4[$i]}  ${array4[$i+1]} diff_${array4[$i]} ${factor}
 done 
 
 exit 0
