@@ -2,27 +2,27 @@
 
 filepattern=$1
 if [[ ${filepattern} == "" ]] ; then
-    echo "Usage: Crop_over.sh filepattern x y h w"
+    echo "Usage: CropOver.sh filePattern x y h w"
     exit 1
 fi
 x=$2
 if [[ ${x} == "" ]] ; then
-    echo "Usage: Crop_over.sh filePattern x y h w"
+    echo "Usage: CropOver.sh filePattern x y h w"
     exit 1
 fi
 y=$3
 if [[ ${y} == "" ]] ; then
-    echo "Usage: Crop_over.sh filePattern x y h w"
+    echo "Usage: CropOver.sh filePattern x y h w"
     exit 1
 fi
 h=$4
 if [[ ${h} == "" ]] ; then
-    echo "Usage: Crop_over.sh filePattern x y h w"
+    echo "Usage: CropOver.sh filePattern x y h w"
     exit 1
 fi
 w=$5
 if [[ ${w} == "" ]] ; then
-    echo "Usage: Crop_over.sh filePattern x y h w"
+    echo "Usage: CropOver.sh filePattern x y h w"
     exit 1
 fi
 

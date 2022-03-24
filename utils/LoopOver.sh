@@ -1,13 +1,13 @@
 #!/bin/bash
 
-factor=$2
-if [[ ${factor} == "" ]] ; then
-    echo "Usage: Loop_over.sh filePattern factor"
-    exit 1
-fi
 filepattern=$1
 if [[ ${filepattern} == "" ]] ; then
-    echo "Usage: Loop_over.sh filePattern factor"
+    echo "Usage: LoopOver.sh filePattern factor"
+    exit 1
+fi
+factor=$2
+if [[ ${factor} == "" ]] ; then
+    echo "Usage: LoopOver.sh filePattern factor"
     exit 1
 fi
 
