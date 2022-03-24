@@ -8,11 +8,11 @@ fi
 
 cutNumber=$2
 if [[ ${cutNumber} == "" ]] ; then
-    echo "Usage: GenerateHtml.sh filePattern"
+    echo "Usage: GenerateHtml.sh filePattern numOfCharToCut"
     exit 1
 fi
 
-fileList=$(ls ${filePattern}*.jpeg)
+fileList=$(ls ${filePattern})
 declare -a array4=($fileList)
 array4Len=${#array4[@]}
 
